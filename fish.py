@@ -22,3 +22,4 @@ class Fish:
         elif self.position.y < 0 or self.position.y > 560:
             self.velocity = Vector(self.velocity.x, -self.velocity.y)
         return self.velocity
+v="fuck yo self v2"
