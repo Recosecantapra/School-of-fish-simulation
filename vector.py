@@ -19,9 +19,6 @@ class Vector:
         newY= self.__y + other.__y
         return Vector(newX,newY)
     
-    def __str__(self):
-        return f"({self.__x},{self.__y})"
-    
     def __sub__(self,other):
         newX = self.__x - other.__x
         newY= self.__y - other.__y
@@ -41,6 +38,8 @@ class Vector:
     
     def normalize_vector(self):
         length = self.get_length()
+        if length == 0:
+            return Vector(0,0)
         return self / length
 
     def dotProduct(self,vector):
@@ -51,7 +50,6 @@ class Vector:
             return self.normalize_vector()*maxlimit
         else:
             return self
-              
     def __str__(self):
         return f"({self.__x}, {self.__y})"
     
