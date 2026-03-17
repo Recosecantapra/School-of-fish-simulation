@@ -5,7 +5,7 @@ class Fish:
     def __init__(self, position, velocity, img):
         self.position = position
         self.velocity = velocity
-        self.img = pygame.transform.scale(pygame.image.load(img), (100, 40))
+        self.img = pygame.transform.scale(pygame.image.load(img), (30, 12))
     
     def update(self):
         self.velocity = self.screenConfinementBounce()

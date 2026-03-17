@@ -1,15 +1,18 @@
 import pygame
 from vector import *
 from fish import *
+from flock import Flok
 
 
-fish_position = Vector(200,200)
-velocity = Vector(6,7)
+# fish_position = Vector(200,200)
+# velocity = Vector(6,7)
 
-fishy = Fish(fish_position, velocity, "fisk.png")
+#fishy = Fish(fish_position, velocity, "fisk.png") 
+
+fishy = Flok(69)
 
 pygame.init()
-screen = pygame.display.set_mode((800, 600))
+screen = pygame.display.set_mode((750, 600))
 
 clock = pygame.time.Clock()
 running = True
@@ -18,6 +21,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
     screen.fill((0, 0, 0))
+   
     fishy.update()
     fishy.draw(screen)
 
