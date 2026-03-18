@@ -8,7 +8,7 @@ class Fish:
     def __init__(self, position, velocity, img):
         self.position = position
         self.velocity = velocity
-        self.img = pygame.transform.scale(pygame.image.load(img), (30, 12))
+        self.img = pygame.transform.scale(pygame.image.load(img), (30, 30))
     
     def update(self, flock_fishes):
         sep = boid.separation(self, flock_fishes)

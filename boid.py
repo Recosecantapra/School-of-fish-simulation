@@ -1,9 +1,7 @@
 from vector import Vector
 
-
 class Boid:
-
-    def separation(self, fish, flock_fishes, tooClose=20, separation_factor=0.05):
+    def separation(self, fish, flock_fishes, tooClose=20, separation_factor=1):
         separation_vector = Vector(0,0)
         for other in flock_fishes:
             if other != fish:

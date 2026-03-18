@@ -3,12 +3,6 @@ from vector import *
 from fish import *
 from flock import Flok
 
-
-# fish_position = Vector(200,200)
-# velocity = Vector(6,7)
-
-#fishy = Fish(fish_position, velocity, "fisk.png") 
-
 fishy = Flok(69)
 
 pygame.init()
